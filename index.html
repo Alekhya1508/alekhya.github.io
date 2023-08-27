@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alekhya Purnima</title>
+    <!--<link rel="icon" href="/images/websitelogo.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ede38599a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <video autoplay loop muted plays-inline class="backvideo">
+                <source src="/images/back-animation.mp4" type="video/mp4">
+            </video>
+            <nav>
+                <a href="https://akash-port-folio.netlify.app/"><!---<img src="images/akash-logo.png" class="logo">--></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SKILLS</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Alekhya</span> Purnima</h1>
+                <p>I'm in <span class="auto-type"></span></p>
+            </div>
+        </div>
+    </div>
+    <!-- ----------About------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images\main_resume_pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Energetic and committed data science under graduation student with a passion for uncovering insights 
+                        within complex datasets, I'm driven to excel in data analyst role. 
+                        My focused education provides me with abilities in Statistical Analysis, 
+                        Data Manipulation, Statistical Modeling and ML techniques.
+                        Enthusiastic to harness technical proficiency and mentorship oppurtunities to propel data-focused solutions, 
+                        fostering business expansion within a collaborative environment.
+                        Always looking for an opportunity. I am also interested in Statistical Analytics & Modelling.<br></p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('more')">More</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>ISWTA International Conference</span><br>Actively engaged in the IEEE Symposium on Wireless Technology and Applications(ISWTA), 
+                                a premier event that convened experts and professionals from around the world in the paper presentation entitled 
+                                Development of an Interactive Web-based Geovisual Analytics Platform for Analysing Crime Data.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Present <br>Bachelor of Technology in Data Science, NIIT UNiversity, 
+                                Neemrana, Rajasthan</span><br>B.Tech in Data Science<br></li>
+                            <li><span>2018 - 2020<br>Intermediate majoring in MPC
+                                    </span><br>Sri Chaitanya Junior College, Gudavalli Vijayawada</li>
+                            <li><span>2014 - 2018<br>Secondary Schooling in CBSE</span><br>Dr.KKR's Gowtham International School, 
+                                Gudavalli,Vijayawada, Andhra Pradesh
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="more">
+                        <ul>
+                            <li><span>Location</span><br>Vijayawada, Andhra Pradesh, India</li>
+                            <li><span>Languages</span><br>English, Telugu, Hindi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- ----------Services------------- --->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Technical Skills</h2>
+                    <p>Languages : Python, SQL, React.js, Express.js</p>
+                    <p>Tools : Power BI, Tableau, Weka, Jupyter, Git, Google Cloud</p>
+                    <p>Domain Knowledge : Machine Learning, NLP, DL, EDA, Data Visualization, Statistics & Probability</p>
+                    <!--<a href="#">Learn More</a>-->
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Soft Skills</h2>
+                    <p>Communication & Easily Adaptability</p>
+                    <p>Teamwork & Problem Solving</p>
+                    <p>Critical Thinking, Negotiation & Empathy</p>
+                    <!--<a href="#">Learn More</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--- ----------Projects------------- --->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="proj-list">
+                <div class="proj">
+                    <img src="images\sentiment_analysis_02.png">
+                    
+                    <div class="layer">
+                        <h3>Sentiment Analysis on Financial News</h3>
+                        <p>Performing Sentiment Analysis to gauge market sentiment 
+                            and inform investment strategies.
+                        </p>
+                        <a href="https://github.com/Alekhya1508/Sentiment-Analysis-on-Financial-News-Headlines.git" target="0"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <p >    Sentiment Analysis  </p>
+                </div>
+                <div class="proj">
+                    <img src="images\main_dashboard_overview.jpeg">
+                    <div class="layer">
+                        <h3>Interactive Geo-Visual Analytics Platform</h3>
+                        <p>Usage of Data Visualization techniques to showcase geospatial data & 
+                            key statistical features combined in an intuitive interface.
+                        </p>
+                        <a href="https://github.com/amankaif/geovisual_analytical_platform.git" target="0"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <p >    Geovisual Analytics Platform  </p>
+                </div>
+                <div class="proj">
+                    <img src="images\firmbee-com-jrh5lAq-mIs-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Chronic Kidney Disease Classification</h3>
+                        <p>To develop accurate classification model by utilizing patient data 
+                            to facilitate early diagnosis and informed healthcare decisions. 
+                        </p>
+                        <a href="https://github.com/Alekhya1508/ckd_classification.git" target="0"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <p >    CKD Classification  </p>
+                </div>
+                
+           </div>
+            <a href="#project" class="btn">See More</a>
+        </div> 
+        
+    </div>
+    <!-------------Contact-------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i> alekhyapurnima7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-9160122244</p>
+                    <div class="social-icons">
+                       <!-- <a href="https://www.facebook.com/profile.php?id=100025112166198" target="0"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/AkashDe67710092" target="0"><i
+                                class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/akash_deb15/" target="0"><i
+                                class="fa-brands fa-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/in/alekhya-purnima-07248528a/" target="0"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Alekhya1508" target="0"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images\Alekhya_Resume.pdf" download class="btn btn2">Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="tel" name="Tel" placeholder="Your Phone No." required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!--<div class="copyright">Copyright © Akash. Made with <i class="fa-solid fa-heart"></i> by <span>Akash
+                Debnath</span></div>-->
+    </div>
+    <!-------Scroll to top--------->
+    <a href="#" class="totop"><i class="fa-solid fa-circle-chevron-up"></i></a>
+
+
+    <!--------------Scripts---------------->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Data Science", "Data Analytics", "AI/ML Engineering"],
+            typeSpeed: 20,
+            backSpeed: 20,
+            loop: true
+        })
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWWKufsbG4-j6oLNdHA0NCS0uhH-YXiQ5z-T7S4xxqd5p6jFLit-QqLRn5kwmbcDob/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        const toTop = document.querySelector(".totop");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 200) {
+                toTop.classList.add("active");
+            } else {
+                toTop.classList.remove("active");
+            }
+        })
+    </script>
+</body>
+
+</html>
